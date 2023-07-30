@@ -1,488 +1,495 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: "Montserrat", sans-serif;
+	color: white;
 }
 
-body{
-    background-color: black;
-    min-height: 100%;
+body {
+	background-color: black;
+	min-height: 100%;
 }
 
-
-main{
-
-    position: relative;
-    min-height: 100vh;
+main {
+	position: relative;
+	min-height: 100vh;
 }
 
-
-nav{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
 }
 
-ul, li, a{
-    font-weight: bold;
-    list-style: none;
-    text-decoration: none;
-    color: white;
+ul,
+li,
+a {
+	font-weight: bold;
+	list-style: none;
+	text-decoration: none;
+	color: white;
 }
 
-
-a:hover{
-    color: aqua;
-    text-shadow: 0 0 50px aqua;
+a:hover {
+	color: aqua;
+	text-shadow: 0 0 50px aqua;
 }
 
-label{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 0.8px;
-    cursor: pointer;
-}
-img{
-    width: 500px;
+label {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	letter-spacing: 0.8px;
+	cursor: pointer;
 }
 
-
-h3{
-    font-size: 1.4rem;
-    font-family: 'Lato', sans-serif;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-family: 'Poppins', sans-serif;
+img {
+	height: 350px;
+	width: 500px;
+	object-fit: scale-down;
 }
 
-select{
-    background-color: white;
-    font-size: 0.9rem;
-    padding: 10px;
-    text-align: justify;
-    width: 300px;
-    color: black;
-    font-weight: bold;
-    letter-spacing: 0.6px;
-    border: 1px solid transparent;
-    font-family: 'Lato', sans-serif;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-family: 'Poppins', sans-serif;
+a > img {
+	height: 300px;
+	width: 300px;
+	object-fit: scale-down;
 }
 
-option{
-    background-color: white;
-    color: black;
-    font-size: 1rem;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    word-spacing: 10px;
-    font-weight: normal;
+h3 {
+	font-size: 1.4rem;
+	font-family: "Lato", sans-serif;
+	font-family: "M PLUS 1p", sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
-
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: black;
-    width: 100%;
-    padding: 15px;
-    color: aqua;
-    gap: 10px;
-    font-size: 14px;
-    letter-spacing: 0.9px;
+span,
+p:not(footer > *) {
+	font-family: "Lato", sans-serif;
+	font-family: "M PLUS 1p", sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
-footer > *{
-    color: aqua;
-
+select {
+	background-color: white;
+	font-size: 0.9rem;
+	padding: 10px;
+	text-align: justify;
+	width: 300px;
+	max-width: max-content;
+	height: max-content;
+	color: black;
+	font-weight: bold;
+	letter-spacing: 0.6px;
+	border: 1px solid transparent;
+	font-family: "Lato", sans-serif;
+	font-family: "M PLUS 1p", sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
-.flex-navigation{
-
-    display: flex;
-    justify-content: space-between;
-    padding: 0 250px;
-    align-items: center;
-    height: 90px;
-    background-color: black;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+option {
+	background-color: white;
+	color: black;
+	font-size: 1rem;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	word-spacing: 10px;
+	font-weight: normal;
 }
 
-.flex-items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: black;
+	width: 100%;
+	padding: 15px;
+	color: aqua;
+	gap: 10px;
+	font-size: 14px;
+	letter-spacing: 1.5px;
 }
 
-
-
-.footer-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100%;
+footer > * {
+	color: aqua;
 }
 
-
-
-.flex-main{
-    display: flex;
-    flex-direction: column;
-    padding: 125px 200px;
-    gap: 80px;
+.flex-navigation {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 250px;
+	align-items: center;
+	height: 90px;
+	background-color: black;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-
-.main-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    padding: 180px 300px 0 300px;
+.flex-items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
 }
 
-
-#description-product{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    gap: 20px;
-    height: 450px;
-    font-family: 'Lato', sans-serif;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-family: 'Poppins', sans-serif;
+.footer-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
 }
 
-.title-product-logo{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.flex-main {
+	display: flex;
+	flex-direction: column;
+	padding: 125px 200px;
+	gap: 80px;
 }
 
-.flex-capacity{
-    display: flex;
-    gap: 15px;
+.main-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 60px;
+	padding: 180px 300px 0 300px;
 }
 
-.capacity-option{
-    font-size: 0.9rem;
-    padding: 5px 15px;
-    border: 1px solid white;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
+#description-product {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	gap: 20px;
+	height: 450px;
 }
 
-.capacity-option:hover{
-    border: 1px solid white;
-    color: black;
-    background-color: white;
+.title-product-logo {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
 
-.capacity-choosed{
-    border: 1px solid white;
-    color: black;
-    background-color: white;
+.flex-capacity {
+	display: flex;
+	gap: 15px;
 }
 
-#purchase-button{
-    background-color: transparent;
-    color: aqua;
-    padding: 5px 10px;
-    width: fit-content;
-    border: 1px solid aqua;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 400ms;
+.capacity-option {
+	font-size: 0.9rem;
+	font-weight: bold;
+	padding: 5px 15px;
+	border: 1px solid white;
+	border-radius: 5px;
+	width: max-content;
+	height: max-content;
+	cursor: pointer;
+	font-family: "Lato", sans-serif;
+	font-family: "M PLUS 1p", sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
-#purchase-button:hover{
-    background-color: aqua;
-    color: black;
-    box-shadow: 0 0 12px 8px rgba(0, 255, 255, 0.2);
+.capacity-option:hover {
+	color: black;
+	border: 1px solid white;
+	background-color: white;
 }
 
-#wishlist-button{
-    background-color: transparent;
-    padding: 5px 10px;
-    width: fit-content;
-    border: 1px solid white;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 400ms;
+.capacity-choosed {
+	border: 1px solid white;
+	color: black;
+	background-color: white;
+	width: max-content;
+	height: max-content;
 }
 
-#wishlist-button:hover{
-    background-color: white;
-    border: 1px solid white;
-    color: black;
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
-}
-#brand{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 420px;
-    gap: 5px;
+.btn {
+	font-size: 1rem;
+	font-weight: bold;
+	background-color: transparent;
+	padding: 5px 10px;
+	width: fit-content;
+	cursor: pointer;
+	width: max-content;
+	height: max-content;
 }
 
-.btn{
-    display: flex;
-    gap: 15px;
+#purchase-button {
+	border: 1px solid aqua;
+	color: aqua;
 }
 
-
-
-
-#flex-iphone-colors{
-    display: flex;
-    gap: 15px;
-    
+#purchase-button:hover {
+	background-color: aqua;
+	color: black;
+	box-shadow: 0 0 12px 8px rgba(0, 255, 255, 0.2);
+	transition: 600ms;
 }
 
-.iphone-colors{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: fit-content;
-    padding: 3px 10px;
-    border-radius: 5px;
-    border: 1px solid plum;border: 1px solid white;
-    padding: 5px 15px;
-    font-weight: bold;
-    font-size: 0.9rem;
+#wishlist-button {
+	border: 1px solid white;
 }
 
-.iphone-colors:hover{
-    background-color: white;
-    cursor: pointer;
+#wishlist-button:hover {
+	background-color: white;
+	border: 1px solid white;
+	color: black;
+	box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+	transition: 600ms;
 }
 
-.iphone-colors:hover > *{
-    color: black;
-
+#brand {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 420px;
+	gap: 5px;
 }
 
-.iphone-clr{
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-    padding: 8px;
-    background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.251);
+.purchase-wishlist-wrapper {
+	display: flex;
+	gap: 15px;
 }
 
-#spacial-gray{
-    background-color: white;
+#flex-iphone-colors {
+	display: flex;
+	gap: 15px;
 }
 
-.iphone-color-spacial-gray{
-    background-color: rgb(55, 55, 55);
+.iphone-colors {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: fit-content;
+	padding: 3px 10px;
+	border-radius: 5px;
+	border: 1px solid plum;
+	border: 1px solid white;
+	padding: 5px 15px;
+	font-weight: bold;
+	font-size: 0.9rem;
 }
 
-.iphone-color-yellow{
-    background-color: #feed9d;
-
-}
-.iphone-color-blue{
-    background-color: #c0cedb;
+.iphone-colors:hover {
+	background-color: white;
+	cursor: pointer;
 }
 
-.title-color{
-    font-size: 0.9rem;
-    color: black;
-    font-weight: bold;
-    font-family: 'Lato', sans-serif;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-family: 'Poppins', sans-serif;
+.iphone-colors:hover > * {
+	color: black;
 }
 
-.product-price{
-    font-size: 1.5rem;
+.iphone-clr {
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	padding: 8px;
+	background-color: transparent;
+	border: 1px solid rgba(0, 0, 0, 0.251);
 }
 
-.stars-score{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+#spacial-gray {
+	background-color: white;
 }
 
-.review-stars{
-    display: flex;
+.iphone-color-spacial-gray {
+	background-color: rgb(55, 55, 55);
 }
 
-#brand-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.iphone-color-yellow {
+	background-color: #feed9d;
+}
+.iphone-color-blue {
+	background-color: #c0cedb;
 }
 
-#iphone-img-logo{
-    border-inline-start: 1px solid;
-    border-block-start: 1px solid;
-    border-image-source: radial-gradient(circle at top left, rgba(255, 192, 203, 0.3), transparent 70%);
-    border-image-slice: 1;
-    position: relative;
-    display: flex;
-    border-radius: 8px;
-    padding: 50px 25px;
-    background: linear-gradient(180deg, rgb(19, 19, 19), rgb(4, 4, 4));
+.title-color {
+	font-size: 0.9rem;
+	color: black;
+	font-weight: bold;
+	font-family: "Lato", sans-serif;
+	font-family: "M PLUS 1p", sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
-
-.icon-tabler-alien{
-    stroke-width: 1.5px;
-    stroke: black;
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    fill: aqua;
+.product-price {
+	font-size: 1.5rem;
 }
 
-.log-in{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-    padding: 0 10px;
-    background-color: transparent;
-    border: 1px solid transparent;
-    cursor: pointer;
+.stars-score {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 }
 
-
-.flex-wrapper-products{
-    height: 600px;
-    width: 700px;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgb(12, 12, 12);
-    border-radius: 5px;
-    border: 1px solid transparent;
-    transition: 400ms;
-    position: relative;
+.review-stars {
+	display: flex;
 }
 
-.flex-wrapper-products:hover{
-    border: 1px solid rgba(255, 255, 255, 0.3);
+#brand-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-
-.flex-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: inherit;
+#iphone-img-logo {
+	border-inline-start: 1px solid;
+	border-block-start: 1px solid;
+	border-image-source: radial-gradient(
+		circle at top left,
+		rgba(255, 192, 203, 0.3),
+		transparent 70%
+	);
+	border-image-slice: 1;
+	position: relative;
+	display: flex;
+	border-radius: 8px;
+	padding: 50px 25px;
+	background: linear-gradient(180deg, rgb(19, 19, 19), rgb(4, 4, 4));
 }
 
-
-.product-title{
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    font-family: 'Lato', sans-serif;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-family: 'Poppins', sans-serif;
+.icon-tabler-alien {
+	stroke-width: 1.5px;
+	stroke: black;
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	fill: aqua;
 }
 
-.description-product{
-    display: flex;
-    justify-content: center;
+.log-in {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+	padding: 0 10px;
+	background-color: transparent;
+	border: 1px solid transparent;
+	cursor: pointer;
 }
 
-
-
-.icon-tabler-shopping-bag{
-    position: absolute;
-    right: 35px;
-    top: 35px;
-    padding: 10px;
-    border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+.flex-wrapper-products {
+	height: 600px;
+	width: 700px;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgb(12, 12, 12);
+	border-radius: 5px;
+	border: 1px solid transparent;
+	position: relative;
 }
 
-
-.icon-tabler-shopping-bag{
-    position: absolute;
-    right: 35px;
-    top: 35px;
-    padding: 10px;
-    border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+.flex-wrapper-products:hover {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	transition: 600ms;
 }
 
-
-.btn-saiba-mais{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 15px;
-    font-size: 0.7rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: white;
-    text-transform: uppercase;
-    border: 1px solid rgba(255, 255, 255, 0.501);
-    background-color: transparent;
-    transition: 600ms;
-    cursor: pointer;
+.flex-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: inherit;
 }
 
-.btn-saiba-mais:hover{
-    background-color: rgb(34, 249, 249);
-    border-color: aqua;
-    color: black;
-    box-shadow: 0 0 15px 8px rgba(0, 255, 255, 0.1);
+.product-title {
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	font-family: "Lato", sans-serif;
+	font-family: "M PLUS 1p", sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
-.section-wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    padding: 180px 300px 100px 300px;
+.description-product {
+	display: flex;
+	justify-content: center;
 }
 
-.flex-section{
-
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+.icon-tabler-shopping-bag {
+	position: absolute;
+	right: 35px;
+	top: 35px;
+	padding: 10px;
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.title-{
-    font-size: 2rem;
-    font-family: 'Lato', sans-serif;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-family: 'Poppins', sans-serif;
+.icon-tabler-shopping-bag {
+	position: absolute;
+	right: 35px;
+	top: 35px;
+	padding: 10px;
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.icon-tabler-brand-html5{
-    height: 45px;
-    width: 45px;
-    stroke-width: 0.5px;
+.btn-saiba-mais {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 15px;
+	font-size: 0.7rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: white;
+	text-transform: uppercase;
+	border: 1px solid rgba(255, 255, 255, 0.501);
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.btn-saiba-mais:hover {
+	background-color: rgb(34, 249, 249);
+	border-color: aqua;
+	color: black;
+	box-shadow: 0 0 15px 8px rgba(0, 255, 255, 0.1);
+	transition: 600ms;
+}
+
+.section-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	padding: 180px 300px 100px 300px;
+}
+
+.flex-section {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+
+.title- {
+	font-size: 2rem;
+	font-family: "Lato", sans-serif;
+	font-family: "M PLUS 1p", sans-serif;
+	font-family: "Poppins", sans-serif;
+}
+
+.icon-tabler-brand-html5 {
+	height: 45px;
+	width: 45px;
+	stroke-width: 0.5px;
+}
+
+.smartphone-img {
+	width: 250px;
+	height: 250px;
+	object-fit: scale-down;
+	margin: 25px 0;
 }
