@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+
+body{
+    /* background-color: rgb(0, 4, 21); */
+    background-color: black;
+    min-height: 100%;
+    
+}
+
+
+main{
+
+    position: relative;
+    min-height: 100vh;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+ul, li, a{
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+
+a:hover{
+    color: aqua;
+    text-shadow: 0 0 50px aqua;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+}
+img{
+    width: 475px;
+}
+
+
+h3{
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.flex-navigation{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 250px;
+    align-items: center;
+    height: 90px;
+    background-color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.flex-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+
+.footer-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    width: 100%;
+    padding: 15px;
+    color: aqua;
+    gap: 10px;
+    font-size: 14px;
+    letter-spacing: 0.9px;
+}
+
+footer > *{
+    color: aqua;
+
+}
+
+.flex-main{
+    display: flex;
+    flex-direction: column;
+    padding: 125px 200px;
+    gap: 80px;
+}
+
+
+.main-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 180px 300px 0 300px;
+}
+
+
+#description-product{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+    height: 450px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-product-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.flex-capacity{
+    display: flex;
+    gap: 15px;
+}
+
+.capacity-option{
+    font-size: 0.9rem;
+    padding: 5px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.capacity-option:hover{
+    border: 1px solid white;
+    color: black;
+    background-color: white;
+}
+
+.capacity-choosed{
+    border: 1px solid white;
+    color: black;
+    background-color: white;
+}
+
+#purchase-button{
+    background-color: transparent;
+    color: aqua;
+    padding: 5px 10px;
+    width: fit-content;
+    border: 1px solid aqua;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+#purchase-button:hover{
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 0 12px 8px rgba(0, 255, 255, 0.2);
+}
+
+#wishlist-button{
+    background-color: transparent;
+    padding: 5px 10px;
+    width: fit-content;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+#wishlist-button:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+}
+
+
+#brand{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 420px;
+    gap: 5px;
+}
+
+.btn{
+    display: flex;
+    gap: 15px;
+}
+
+
+select{
+    background-color: white;
+    font-size: 0.9rem;
+    padding: 10px;
+    text-align: justify;
+    width: 300px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    border: 1px solid transparent;
+    font-family: 'Lato', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+option{
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    word-spacing: 10px;
+    font-weight: normal;
+}
+
+#flex-iphone-colors{
+    display: flex;
+    gap: 15px;
+    
+}
+
+.iphone-colors{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 1px solid plum;border: 1px solid white;
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.iphone-colors:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.iphone-colors:hover > *{
+    color: black;
+
+}
+
+.iphone-clr{
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.251);
+}
+
+#spacial-gray{
+    background-color: white;
+}
+
+.iphone-color-spacial-gray{
+    background-color: rgb(55, 55, 55);
+}
+
+.iphone-color-yellow{
+    background-color: #feed9d;
+
+}
+.iphone-color-blue{
+    background-color: #c0cedb;
+}
+
+.title-color{
+    font-size: 0.9rem;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-price{
+    font-size: 1.5rem;
+}
+
+.stars-score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.review-stars{
+    display: flex;
+}
+
+#brand-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#iphone-img-logo{
+    border-inline-start: 1px solid;
+    border-block-start: 1px solid;
+    border-image-source: radial-gradient(circle at top left, rgba(255, 192, 203, 0.3), transparent 70%);
+    border-image-slice: 1;
+    position: relative;
+    display: flex;
+    border-radius: 8px;
+    padding: 100px 75px;
+    background: linear-gradient(180deg, rgb(19, 19, 19), rgb(4, 4, 4));
+}
+
+
+.icon-tabler-device-nintendo{
+    stroke-width: 1px;
+    stroke: black;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    fill: white;
+}
+
+.log-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    padding: 0 10px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+
+.flex-wrapper-products{
+    height: 600px;
+    width: 700px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(12, 12, 12);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: 400ms;
+    position: relative;
+}
+
+.flex-wrapper-products:hover{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.flex-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: inherit;
+}
+
+
+.product-title{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.description-product{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.icon-tabler-shopping-bag{
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.icon-tabler-shopping-bag{
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.btn-saiba-mais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.501);
+    background-color: transparent;
+    transition: 600ms;
+    cursor: pointer;
+}
+
+.btn-saiba-mais:hover{
+    background-color: rgb(34, 249, 249);
+    border-color: aqua;
+    color: black;
+    box-shadow: 0 0 15px 8px rgba(0, 255, 255, 0.1);
+}
+
+.section-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 180px 300px 100px 300px;
+}
+
+.flex-section{
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.title-{
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.icon-tabler-brand-html5{
+    height: 45px;
+    width: 45px;
+    stroke-width: 0.5px;
+}
